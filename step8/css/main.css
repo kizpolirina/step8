@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap')
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: underline;
+    color: red;
+}
+
+body{
+    background-image: url(../img/1679642759_bogatyr-club-p-oboi-pastelnikh-tonov-foni-pinterest-24\ \(1\).jpg);
+    font-size: 18px;
+    line-height: 30px;
+    /*img{
+        width: 20%;
+        margin-left: 70%;
+        margin-top: 20%;
+    }*/
+    
+}
+
+@keyframes myImgAnimation {
+    0% { opacity: 0; }
+    12.12% { opacity: 1; }
+    35.35% { opacity: 1; }
+    45.45% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.imgContainer { 
+    position:relative;
+    width:20%;
+    margin-left: 70%;
+        margin-top: 20%;
+
+}
+
+.imgContainer img { 
+    position:absolute; 
+    width:100%; 
+    left:0;
+    right:0;
+    opacity:0;
+    animation-name: myImgAnimation; animation-duration: 4s; animation-iteration-count: infinite; }
+
+.imgContainer img:nth-child(1){ animation-delay: 0s; }
+
+.imgContainer img:nth-child(2) { animation-delay: 1s; }
+
+.imgContainer img:nth-child(3) { animation-delay: 2s; }
+
+.imgContainer img:nth-child(4) { animation-delay: 3s; }
+
+.imgContainer img:nth-child(5) { animation-delay: 4s; }
+
+.wrapper{
+    background-color: rgb(81, 232, 81, 0.4);
+    border-radius: 5px;
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+input[type="text"]{
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: blue;
+    letter-spacing: 1px;
+    width: 100%;
+    outline: none;
+
+    
+}
+
+input[type="email"]{
+    font-family: "Dancing Script", cursive;
+    font-size: 26px;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: blue;
+    letter-spacing: 1px;
+    width: 100%;
+    outline: none;
+}
+
+.wrapper div{
+    position: relative;
+}
+
+
+.wrapper div label{
+    color: #fff;
+    font-size: 22px;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 5px 0;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    transition: 0.5s;
+}
+
+.wrapper div input:focus~label,
+.wrapper div input:valid~label
+{
+    left: 0;
+    top: -22px;
+    color: red;
+    font-size: 12px;
+}
+
+
+
+/*input[type="text"]:hover{
+    font-size:10px;
+}
+
+
+input[type="password"]{
+    font-family: "Dancing Script", cursive;
+    font-size: 26px;
+    padding: 15px;
+    margin-bottom: 10px;
+}*/
+
+input[type="submit"]{
+    padding: 15px;
+    display: inline-block;
+    font-size: 26px;
+    border: 4px solid green;
+    background-color: rgb(244, 99, 99);
+    width: 100px;
+    border-radius: 35%;
+}
+
+
+
